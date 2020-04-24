@@ -1,0 +1,690 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link href="/html5/images/favicon-eow.ico" type="image/x-icon" rel="icon">
+    <title>EyeOnWater: Making Water Visible.™</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700,400italic" rel="stylesheet">
+    <link href="/webassets/unauth_prod.css?1585694400" media="all" rel="stylesheet">
+<!--[if IE]>
+<link href='/html5/css/ie.css' media='all' rel='stylesheet' />
+<![endif]-->
+
+    
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script>
+    (function(){
+      if (/beaconama\.net\/signup/.test(window.location.href) && !/eyeonwater\.beaconama\.net/.test(window.location.href) ) {
+          var url =  window.location.href;
+          url = url.replace(/beaconama.net/, "eyeonwater.com");
+          window.location = url;
+      }
+    })();
+    </script>
+    
+    <script>
+      (function() {
+        'use strict';
+        window.custom_site="";
+        var AQ = {
+          Models: {},
+          Collections: {},
+          Views: {
+            Portlets: {}
+          },
+          Routers: {},
+          Settings: {
+            buildtime:("1585700312.78"),
+            user: {
+              role: '',
+              tz: ''
+            },
+            debug_mode: false,
+            supported_langs: ['es', 'nl', 'ar', 'de', 'fr', 'da', 'el', 'hmn'],
+            utility_timezone: '',
+            isAquacue: false,
+            brand: {
+              utility_uuid: '0',
+              slug: 'eyeonwater',
+              home_url: '',
+              brand_string: 'EyeOnWater',
+              sample_bill_url: '/html5/images/sample-bills/sample-bill.png'
+            },
+            gmap: {
+              loaded: false,
+              url: '',
+              id: ''
+            }
+          },
+          Utils: {},
+          Brand: {
+              brand_string: 'EyeOnWater'
+          },
+          Locale: {
+              lang: 'en',
+              eowLang: '',
+              utility_language: '',
+              utility_country: '',
+              number_format:  ''
+          },
+          Page:{
+            currentPage: ""
+          }
+        };
+        window.AQ = AQ;
+      }());
+      var href = window.location.href,
+        debug = href.substr(href.lastIndexOf('/') + 1),
+        new_href = '';
+      if ( debug == '8675309') {
+        var regex = /\/8675309/gi;
+        new_href = href.replace(regex, '');
+        history.replaceState({page:history.length}, "", new_href);
+      }
+
+    </script>
+
+    <script src="/html5/js/modernizr.min.js"></script>
+    <script src="/html5/js/respond.min.js"></script>
+  </head>
+  <body class="bp two-col outreach noauth " id="" data-brand="eyeonwater">
+
+    <div id="background"></div>
+
+    <div id="container">
+      <div id="container-background"></div>
+      <header class="page-header">
+        <hgroup>
+          <a href="" title="EyeOnWater" class="logo">
+            <img src="/html5/images/logo-eyeonwater-big.png" alt="EyeOnWater">
+          </a>
+        </hgroup>
+      </header>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="main-overview" role="main">
+
+  <div class="pure-g eow-head">
+    <div id="eow-home-link" class="pure-u-1-2 back-link">
+    
+    </div>
+    <div id="eow-help-link" class="pure-u-1-2"><div id="lang-picker">
+        <div id="eow-unauth-lang-picker">
+            <menu class="button button-tooltip">
+              <label class="menu-label">English</label>
+              <menu class="actions">
+                <li class="action hide">
+                  <a class="focus_card_button">English</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">English</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Español</a>
+                </li>
+                <li class="action">
+                  <a class="focus_card_button">Deutsch</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Français</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Nederlands</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Dansk</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Ελληνικά</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Hmoob</a>
+                </li>
+
+
+              </menu>
+            </menu>
+          </div>
+        
+      </div>
+      <span class="divider">|</span><a href="http://helpeyeonwater.com/en/creating-an-account" target="_blank" id="eow-help-header">Help</a>
+    </div>
+  </div>
+  </div>
+
+    <section class="pure-g authentication-panel">
+      <aside class="pure-u-1-2">
+        <img class="logo" src="/html5/images/logo-eyeonwater-big.png" alt="EyeOnWater Logo">
+        
+  <div class="mobile-os-icons ">
+    <div class="mobile-icon-ios">
+      <a href="https://itunes.apple.com/us/app/eyeonwater/id915457810?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2014-09-14&amp;kind=iossoftware&amp;bubble=ios_apps) no-repeat;width:135px;height:40px;padding:0;margin:0;"></a>
+    </div>
+    <div class="mobile-icon-android">
+      <a href="https://play.google.com/store/apps/details?id=com.badgermeter.eyeonwater&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="padding:0;margin:0;"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" style="width:156px"></a>
+    </div>
+  </div>
+
+      </aside>
+
+      <div class="pure-u-1-2 main">
+
+        
+
+
+        <div id="eow-signin">
+        <form method="post" id="signin_account" action="/account/signin" class="new">
+          
+
+          
+
+          
+<div id="browser-support"><p>
+  Badger Meter BEACON AMA supported browsers are Chrome, Firefox, Safari, and Internet Explorer versions 9 and higher. IE 8 and lower are not supported.
+</p></div>
+
+          <fieldset>
+              <div class="form-group">
+                <label for="username_entry" id="eow-email-entry">Email Address:</label>
+                <input type="text" id="username" name="username" value="" class="validate[required] text-input" data-prompt-position="inline" data-prompt-target="username_entry_error_target" autocapitalize="off" autocorrect="off">
+                <div id="username_entry_error_target" class="prompt-target"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="password" id="eow-password">Password:</label>
+                <input type="password" id="password" name="password" value="" class="validate[required] text-input" data-prompt-position="inline" data-prompt-target="password_error_target" autocapitalize="off" autocorrect="off" autocomplete="off">
+                <div id="password_error_target" class="prompt-target"></div>
+              </div>
+
+              <div class="form-group ctas">
+                <button type="submit" class="button primary" id="eow-sign-in">
+                  Sign In <span class="arrow">▶</span>
+                </button>
+                <span id="wait" name="wait" style="display: none;"><img src="/images-signup/wait.gif"></span>
+
+                <div class="pure-g">
+                  <div class="pure-u-1-2">
+                    <a href="/signup" id="resend_password_link" class="eow-create-account">Create Account</a>
+                  </div>
+                  <div class="pure-u-1-2">
+                    <a href="/account/password/" id="resend_password_link" class="eow-forget-pass">Forgot Password?</a>
+                  </div>
+                </div>
+              </div>
+          </fieldset>
+        </form>
+      </div>
+      </div>
+    </section>
+
+</div>
+
+
+      
+      <footer id="base-footer">
+        <div class="footer-outreach">
+          <aside class="left" id="powered-by-footer">Powered by <a href="http://www.badgermeter.com" target="_blank">Badger Meter, Inc.</a></aside>
+          <aside class="legal">
+              <div class="slide-toggle" data-toggle="#legalNav" id="base-legal-footer">Legal</div>
+              <ul id="legalNav">
+                  <li>
+                      <strong>Badger Meter</strong>
+                      <a href="/termsofuse" target="_blank" id="hidden-tos">Terms of Use</a><span class="divider">|</span>
+                      <a href="/privacy" target="_blank" id="hidden-pp">Privacy Policy</a>
+                  </li>
+              </ul>
+          </aside>
+        </div>
+      </footer>
+      <script id="base-footer-template" type="text/x-handlebars-template">
+        <div class="footer-outreach">
+          <aside class="left" id="powered-by-footer">{{{powered_by}}}</aside>
+          <aside class="legal">
+              <div class="slide-toggle" data-toggle="#legalNav" id="base-legal-footer">{{legal}}</div>
+              <ul id="legalNav">
+                  <li>
+                      <strong>Badger Meter</strong>
+                      <a href="{{tos_url}}" target="_blank" id="hidden-tos">{{tos}}</a><span class="divider">|</span>
+                      <a href="{{privacy_url}}" target="_blank" id="hidden-pp">{{privacy}}</a>
+                  </li>
+              </ul>
+          </aside>
+        </div>
+      </script>
+
+    
+
+    <div id="outside-container">
+      <div id="sub-footer">
+        <img class="footer-waves" src="/html5/images/footer.png">
+      </div>
+    </div>
+
+    <script id="tooltip-template" type="text/x-handlebars-template">
+        <div id="{{id}}" class="tooltip">
+            <h4 class="pod-header info-bubble-header">{{title}}<span class="close-tooltip"><img src="/images/close-white.png"></span></h4>
+            <div class="tooltip-body">
+                <p>{{{body}}}</p>
+            </div>
+        </div>
+    </script>
+
+  <script src="/webassets/unauth_prod.js?1585694403"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/tipped/tipped-3.2.0/js/spinners/spinners.min.js"></script>
+    <script src="/js/tipped/tipped-3.2.0/js/tipped/tipped.js"></script>
+      <script src="/js/jquery-ui/js/jquery.validationEngine-en.js"></script>
+    <script src="/js/jquery-ui/js/jquery.validationEngine.js"></script>
+    <script type="text/javascript">
+      function randomDidYouKnowMessage() {
+        var motd = [ "motd-zero", "motd-one", "motd-two", "motd-three", "motd-four", "motd-five", "motd-six", "motd-seven", "motd-eight", "motd-nine", "motd-ten" ];
+        return motd[Math.floor( Math.random() * 11 )];
+      }
+
+      AQ.Locale.lang = 'en';
+      var localeChange = '';
+      var locale = "en";
+      locale = getLocale();
+
+      if(AQ.Settings.supported_langs.indexOf(locale) < 0 ){
+        locale = "en"
+      }
+
+      function canUseLocalStorage(){
+        var test = 'test';
+        try {
+          localStorage.setItem(test, test);
+          localStorage.removeItem(test);
+          return true;
+        } catch(e) {
+          return false;
+        }
+      }
+
+      function getLocale() {
+        if(canUseLocalStorage() === true){
+          document.cookie = 'locale=' + AQ.Locale.lang+';path=/';
+
+          if(localeChange == "True"){
+            localStorage.setItem('AQlocale', AQ.Locale.lang);
+          }
+          else if(localStorage.getItem('AQlocale') == null){
+            localStorage.setItem('AQlocale', 'en');
+          }
+
+          return localStorage.getItem('AQlocale');
+        }
+        else{
+          return "en";
+        }
+      }
+
+      function setLangPicker() {
+
+          var locale_to_lang_map = {
+            "en": "English",
+            "es": "Español",
+            "nl": "Nederlands",
+            "fr": "Français",
+            "de": "Deutsch",
+            "da": "Dansk",
+            "el": "Ελληνικά",
+            "hmn": "Hmoob"
+          };
+          var lang_picker_template = AQ.Utils.compileTemplate('#lang-picker-template', {
+            selected_lang: locale_to_lang_map[locale]
+          });
+          $('#lang-picker').append(lang_picker_template);
+          var $menu = $('.actions li');
+          $menu.click(function () {
+            $this = $(this);
+            var text = $this.find('a').text();
+            $('.menu-label').text( text );
+            $menu.not(this).removeClass('hide');
+            $(this).addClass('hide');
+            var langMap = {
+                  "English": "en",
+                  "Español": "es",
+                  "Nederlands": "nl",
+                  "Français": "fr",
+                  "Deutsch": "de",
+                  "Dansk": "da",
+                  "Ελληνικά": "el",
+                  "Hmoob": "hmn"
+                },
+                pathMap = {
+                  "/account/password/":  "/account/password",
+                  "/signin": ""
+                },
+                pathname = window.location.pathname,
+                pattern = '',
+                prop;
+
+            for( prop in pathMap ){
+             if (pathname == prop) {
+               pathname =  pathMap[prop];
+             }
+            }
+            for( prop in langMap ){
+                pattern = '/' + langMap[prop];
+                 if (pathname.indexOf(pattern, pathname.length - pattern.length) !== -1) {
+                   pattern = new RegExp('\\' + pattern + '$');
+                   pathname = pathname.replace(pattern, '');
+                   break;
+                 }
+            }
+            window.location.replace(window.location.protocol + '//' + window.location.hostname + pathname + '/' + langMap[text]);
+          });
+      }
+
+      function setStaticElements(helpPath){
+          $('#eow-home-link').append(AQ.Utils.compileTemplate('#eow-home-link-template', {
+            back_to: $.i18n('eow-back', AQ.Brand.brand_string)
+          }));
+          $('#eow-help-link').append(AQ.Utils.compileTemplate('#eow-help-link-template', {
+            help: $.i18n('help'),
+            help_path: helpPath
+          }));
+
+        $('#base-footer').append(AQ.Utils.compileTemplate('#base-footer-template', {
+          copyright: $.i18n("copyright-badger"),
+          tos: $.i18n('tos-footer'),
+          tos_url: $.i18n('tos-footer-url'),
+          privacy: $.i18n('privacy-footer'),
+          privacy_url: $.i18n('privacy-footer-url'),
+          powered_by: $.i18n('powered-by'),
+          legal: $.i18n('legal')
+        }));
+      }
+
+      $('.button-tooltip').on('click', function (e) {
+        var $sel, $this, activeClass;
+        e.stopPropagation();
+        activeClass = 'active';
+        $sel = $(e.handleObj.selector);
+        $this = $(this);
+        if (!$this.hasClass(activeClass)) {
+          $sel.removeClass(activeClass);
+        }
+        $this.toggleClass(activeClass);
+        return this;
+      });
+
+
+    </script>
+
+
+  <script type="text/javascript">
+    function setElements(){
+      if (AQ.Settings.supported_langs.indexOf(locale) >= 0){
+        $.i18n({
+          locale: "other"
+        });
+      }
+      else{
+        $.i18n({
+          locale: "en"
+        });
+      }
+      $.i18n().load( {
+        'en': '/html5/i18n/signin-en.json?' + AQ.Settings.buildtime,
+        'other': '/html5/i18n/signin-' + locale + '.json?' + AQ.Settings.buildtime
+      } ).done(function(){
+        setStaticElements('/creating-an-account');
+
+
+            $('#eow-signin').append(
+              AQ.Utils.compileTemplate(
+                '#eow-main-signin-template',
+                {
+                  email: $.i18n('email-field'),
+                  forgot_password: $.i18n('forgot-password'),
+                  password_field: $.i18n('password-field'),
+                  signin_button: $.i18n('sign-in-button'),
+                  create_account: $.i18n('create-account'),
+                  forgot_password: $.i18n('forgot-password-two')
+                }
+              )
+            );
+
+
+        var $signinForm = $('#signin_account');
+        var $username = $('#username');
+
+        $('#wait').hide();
+        // SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() },
+        $signinForm.validationEngine({
+          success :  false,
+          failure : function() {}
+        });
+        $username.focus();
+
+          $signinForm.submit(function(event){
+            var username;
+            username = $username.val();
+            username = $.trim(username.toLowerCase());
+            $username.val(username);
+          });
+
+      } );
+    }
+    $(document).ready(function() {
+      setElements();
+       setLangPicker();
+
+      // Handles resending the verification email
+      $(document).on('submit', 'form[action*="resend_email"]', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $field = $('#email');
+        var email = $field.val();
+
+        function complete(resp) {
+          $this
+            .removeClass('busy')
+            .parents().attr('type', 'success');
+        }
+        function error(resp) {}
+        function success(resp) {}
+
+        if (email) {
+          $this.addClass('busy');
+          $.get($this.attr('action'), {'email': email})
+            .complete(complete)
+            .success(success)
+            .error(error);
+        }
+      });
+
+      function submit_form() {
+        $('#wait').show();
+
+        $signinForm.submit();
+      }
+    });
+
+  </script>
+
+      <script id="eow-main-signin-template" type="text/x-handlebars-template">
+        <form method="post" id="signin_account" action="/account/signin" class="new">
+          
+
+          
+
+          
+<div id="browser-support"><p>
+  Badger Meter BEACON AMA supported browsers are Chrome, Firefox, Safari, and Internet Explorer versions 9 and higher. IE 8 and lower are not supported.
+</p></div>
+
+          <fieldset>
+              <div class="form-group">
+                <label for="username_entry" id="eow-email-entry">{{email}}</label>
+                <input type="text" id="username" name="username" value="" class="validate[required] text-input" data-prompt-position="inline"  data-prompt-target="username_entry_error_target" autocapitalize="off" autocorrect="off">
+                <div id="username_entry_error_target" class="prompt-target"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="password" id="eow-password">{{password_field}}</label>
+                <input type="password" id="password" name="password" value="" class="validate[required] text-input" data-prompt-position="inline" data-prompt-target="password_error_target" autocapitalize="off" autocorrect="off" autocomplete="off">
+                <div id="password_error_target" class="prompt-target"></div>
+              </div>
+
+              <div class="form-group ctas">
+                <button type="submit" class="button primary" id="eow-sign-in">
+                  {{signin_button}} <span class="arrow">&#9654;</span>
+                </button>
+                <span id="wait" name="wait"><img src="/images-signup/wait.gif"></span>
+
+                <div class="pure-g">
+                  <div class="pure-u-1-2">
+                    <a href="/signup" id="resend_password_link" class="eow-create-account">{{create_account}}</a>
+                  </div>
+                  <div class="pure-u-1-2">
+                    <a href="/account/password/" id="resend_password_link" class="eow-forget-pass">{{forgot_password}}</a>
+                  </div>
+                </div>
+              </div>
+          </fieldset>
+        </form>
+      </script>
+
+
+
+    <script>
+        $(function() {
+          'use strict';
+
+          // Reusable and basic tooltip widget.
+          // Just add [data-tooltip] attrib to any element and HTML/text content as the value
+          //
+          // Optional [data-tooltip-config] arttrib to pass in one-off config options. Must be valid
+          // JSON (double quotes).
+          //
+          // Example:
+          //
+          //   <i class="icon-help help" data-tooltip="<p>Help text to display.</p>"></i>
+
+          var _TipOpts = {
+            maxWidth: 650,
+            closeButton: false,
+            contaniment: false
+          };
+
+          $('[data-tooltip]').each(function(el, ii) {
+              var $this = $(this);
+              var content = $this.data('tooltip');
+
+              // Fetch any one-off config options from the element
+              var opts = $this.data('tooltip-config');
+              // Note: This test detects JSON presence, AND malformed JSON to avoid errors
+              if (/:/.test(opts) && /^(\':|: \')/.test(opts)) {
+                  // The value is a string until we parse it into JSON.
+                  opts = $.parseJSON(opts);
+              }
+
+              // Override the _opts defaults above with any config found on the element.
+              opts = $.extend({}, _TipOpts, opts);
+
+              // Initialize this tooltip!
+              Tipped.create(this, content, opts);
+          });
+        });
+
+        function dialog(title, message, closeMessage) {
+            closeMessage = closeMessage || $.i18n("Close");
+            $.confirm({
+              animation: 'none',
+              title: title,
+              content: message,
+              buttons: {
+                  cancel: {
+                      text: closeMessage,
+                      btnClass: 'primary'
+                  }
+              }
+            });
+            return false;
+        }
+    </script>
+
+    <script id="eow-home-link-template" type="text/x-handlebars-template">
+    </script>
+    <script id="eow-help-link-template" type="text/x-handlebars-template">
+      <span class="divider">|</span><a href="http://helpeyeonwater.com/en{{help_path}}" target="_blank" id="eow-help-header">{{help}}</a>
+    </script>
+
+    <script id="lang-picker-template" type="text/x-handlebars-template">
+        <div id="eow-unauth-lang-picker">
+            <menu class="button button-tooltip">
+              <label class="menu-label">{{selected_lang}}</label>
+              <menu class="actions">
+                <li class="action hide">
+                  <a class="focus_card_button">English</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">English</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Español</a>
+                </li>
+                <li class="action">
+                  <a class="focus_card_button">Deutsch</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Français</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Nederlands</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Dansk</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Ελληνικά</a>
+                </li>
+                <li class="action">
+                  <a class="diagnostic_button">Hmoob</a>
+                </li>
+
+
+              </menu>
+            </menu>
+          </div>
+        </hgroup>
+      </script>
+
+        <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-49143943-1']);
+      
+      
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+  
+  
+
+</body></html>
